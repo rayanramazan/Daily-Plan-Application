@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Plan</string>
+
+
+
+    <!-- login page -->
+    <string name="txtLogin">چوونە ژوور</string>
+    <string name="emailAdress">ناڤ و نیشانێن ئەلێکترۆنى</string>
+    <string name="enterPassword">پەیڤا نهێنى</string>
+    <string name="txtForgotPassword">پەیڤا نهێنى تە بیرکریە ؟</string>
+    <string name="craeteAccount">هەژمارەکا نوى دروست بکە</string>
+
+    <!-- dialog forgot pass -->
+    <string name="titleRecoverPass">گوهڕینا پەیڤا نهێنى نهێنی</string>
+    <string name="enterEmail">ناڤ و نیشانێن ئەلێکترۆنى بنڤیسە ...</string>
+    <string name="bardawambonBtn">بەردەوام بوون</string>
+
+    <!-- Register Page -->
+    <string name="titleRegister">تۆمار کرن</string>
+    <string name="RegName">ناڤ</string>
+    <string name="btnReigister">دروستکرن</string>
+    <string name="haveAccount"> تە هەژمار هەیە ؟ چوونە ژوور</string>
+
+    <!-- dialog select charecter -->
+    <string name="titleCharecter">کارێکتەرەکى هەلبژێرە</string>
+    <string name="btnCharecter">بەردەوام بوون</string>
+
+    <!-- navigation item -->
+    <string name="add">زێدە کرن</string>
+
+    <!-- Add page -->
+    <string name="hastAdd">هەستێ تە چەوایە</string>
+    <string name="healthAdd">تەندروستی - ئاڤ ڤەخارن</string>
+    <string name="enterHere">فێرێ بنڤێسە ...</string>
+    <string name="todayAdd">ئەڤرۆ توو چەندێ دەیێ</string>
+    <string name="importandAdd">گرنگترینا ئەڤڕۆ</string>
+    <string name="nextBtn">دیڤدا</string>
+    <string name="previewBtn">پێشتر</string>
+    <string name="saveBtn">هەلگرتن</string>
+
+    <!-- dialg change name -->
+    <string name="titleNameChange">گوهڕینا ناڤى</string>
+    <string name="ChangeNameBtn">گوهڕین</string>
+
+    <!-- dialg change password -->
+    <string name="titleChangePass">گوهڕینا پەیڤا نهێنى</string>
+    <string name="passOld">پەیڤا نهێنى نۆکە</string>
+    <string name="passNew">پەیڤا نهێنى نوى</string>
+    <string name="ChangePassBtn">گوهڕین</string>
+
+    <!-- dialg change plan -->
+    <string name="titleDialogChangePlan">رۆژانە</string>
+    <string name="txtDialohChangePlan">تو دێ رۆژانا خۆ گوهڕینێ کەى یان دێ ژێبەى ؟</string>
+    <string name="btnChangeDialogPlan">گوهڕین</string>
+    <string name="btnDeletePlan">ژێبرن</string>
+
+    <!-- about page -->
+    <string name="aboutTxt">رێڤەبرنا دەمى ئێکە ل گرنگرترین خاڵێن بوون ب کەسەکێ سەرکەفتى , بێ گومان پێتڤیە تشتەک هەبیت کو هاریکاریا تە بکەت بۆ رێڤەبرنا دەمى</string>
+
+
+    <!-- setting page -->
+    <string name="itemChangeName">گوهڕینا ناڤى</string>
+    <string name="itemChangePass">گوهڕینا پەیڤا نهێنى</string>
+    <string name="itemChangeLanguage">گوهڕینا زمانى</string>
+    <string name="logout">چوونەدەر</string>
+
+    <!-- details page -->
+    <string name="myFell">هەستێ من</string>
+    <string name="myHealth">تەندروستیا من</string>
+    <string name="myDay">رۆژا من</string>
+    <string name="myImportand">گرنگترینا ئەڤڕۆ</string>
+
+    <!-- progress bar -->
+    <string name="txtProgress">چاڤەڕێ بە ...</string>
+
+    <!-- Toast -->
+    <string name="empty">هێڤیدارین خانا پر بکەى</string>
+    <string name="emptyEmailPass">زانیارێن خۆ بنڤێسە</string>
+    <string name="pleaseVerifyAccount">هیڤیدارین هەژمارا خۆ پشتڕاستبکەى</string>
+    <string name="tryAgain">دووبارە هەوڵبدە</string>
+    <string name="sendMsgToRecover">نامە بۆ هەژمارا تە ئیمەیلى هاتە فڕێکرن</string>
+    <string name="thisEmailNotHave">هەژمار ڤى ناڤ و نیشانى نینن</string>
+    <string name="enterName">ناڤێ خۆ بنڤێسە</string>
+    <string name="enterAge">تەمەنێ خۆ بنڤێسە</string>
+    <string name="enterEmailRegister">ناڤ و نیشانێن ئەلێکترۆنى بنڤێسە</string>
+    <string name="enterPassRegister">پەیڤا نهێنى بنڤێسە</string>
+    <string name="lessPass">پەیڤا نهێنى کێمتر ل ٨ پیتان ناچێبیت</string>
+    <string name="enterGenderRegister">رەگەزێ خۆ هەلبژێرە</string>
+    <string name="sendMsgVerifyEmail">ناما پشتڕاستکرنێ بۆ ئیمەیلی هاتە فڕێکرن</string>
+    <string name="thisEmailWrong">نەشێى ڤى ناڤ و نیشانى تۆمار بى</string>
+
+
+    <!-- Hint -->
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AboutFragment">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="دەربارە"
+       android:textSize="28sp"
+       android:textColor="@color/black"
+       android:textAlignment="center"
+       android:layout_marginTop="80dp"
+       android:id="@+id/txt"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/aboutTxt"
+        android:layout_below="@+id/txt"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"/>
+
+
+</RelativeLayout>

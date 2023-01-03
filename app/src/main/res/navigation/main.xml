@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/menuProfile">
+
+    <fragment
+        android:id="@+id/menuProfile"
+        android:name="com.example.plan.Fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"
+        />
+    <fragment
+        android:id="@+id/menuPlan"
+        android:name="com.example.plan.Fragment.PlanFragment"
+        android:label="Plan"
+        tools:layout="@layout/fragment_plan" />
+    <fragment
+        android:id="@+id/menuAdd"
+        android:name="com.example.plan.Fragment.AddFragment"
+        android:label="Add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/menuAbout"
+        android:name="com.example.plan.Fragment.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/menuSetting"
+        android:name="com.example.plan.Fragment.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>

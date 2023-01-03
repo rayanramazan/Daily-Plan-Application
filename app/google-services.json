@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "45817913156",
+    "project_id": "planm-fd2de",
+    "storage_bucket": "planm-fd2de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45817913156:android:2c56a0145ea0ee0e274111",
+        "android_client_info": {
+          "package_name": "com.example.plan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45817913156-iknqug1afe279uu4a9rqi5dtop7ko8a9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgVLsfm1iQMlxkiWVpr4q3kCqv-3s3jBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45817913156-iknqug1afe279uu4a9rqi5dtop7ko8a9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

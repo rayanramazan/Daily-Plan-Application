@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/customSpinnerItemLayout"
+        android:layout_toRightOf="@+id/customSpinnerIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/iconSpinnerLayout"
+            android:padding="10dp"
+            android:foregroundGravity=""
+            android:src="@drawable/equality"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSpinnerLayout"
+            android:text="رەگەز"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/myfont"
+            android:textColor="@color/mor"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/customSpinnerIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:src="@drawable/ic_drop_down" />
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Planm</string>
+    <string-array name="gender">
+        <item>
+            نێر
+        </item>
+        <item>
+            مێ
+        </item>
+    </string-array>
+
+    <!-- login page -->
+    <string name="txtLogin">چوونە ژوورەوە</string>
+    <string name="emailAdress">ناونیشانى ئەلێکترۆنى</string>
+    <string name="enterPassword">وشەى نهێنى</string>
+    <string name="txtForgotPassword">وشەی نهێنیت لە بیرچووە ؟</string>
+    <string name="craeteAccount">هەژمارێکی نوێ دروست بکە</string>
+
+    <!-- dialog forgot pass -->
+    <string name="titleRecoverPass">گۆرینی وشەی نهێنی</string>
+    <string name="enterEmail">ناونیشانى ئەلێکترۆنى بنووسە ...</string>
+    <string name="bardawambonBtn">بەردەوام بوون</string>
+
+    <!-- Register Page -->
+    <string name="titleRegister">تۆمارکردن</string>
+    <string name="RegName">ناو</string>
+    <string name="btnReigister">دروستکردن</string>
+    <string name="haveAccount">هەژمارت هەیە ؟ چوونە ژوورەوە</string>
+
+    <!-- dialog select charecter -->
+    <string name="titleCharecter">کارێکتەرێک هەڵبژێرە</string>
+    <string name="btnCharecter">بەردەوام بوون</string>
+
+    <!-- navigation item -->
+    <string name="add">زیاد کردن</string>
+
+    <!-- Add page -->
+    <string name="hastAdd">هەستت چۆنە</string>
+    <string name="healthAdd">تەندروستی - ئاوخواردنەوە</string>
+    <string name="enterHere">لێرە بنووسە ...</string>
+    <string name="todayAdd">ئەمڕۆ چۆن هەڵدەسەنگێنى</string>
+    <string name="importandAdd">گرنگترینى ئەمڕۆ</string>
+    <string name="nextBtn">دواتر</string>
+    <string name="previewBtn">پێشتر</string>
+    <string name="saveBtn">هەڵگرتن</string>
+
+    <!-- dialg change name -->
+    <string name="titleNameChange">گۆڕینى ناو</string>
+    <string name="ChangeNameBtn">گۆڕین</string>
+
+    <!-- dialg change password -->
+    <string name="titleChangePass">گۆڕینى وشەى نهێنى</string>
+    <string name="passOld">وشەى نهێنى ئێستا</string>
+    <string name="passNew">وشەى نهێنى نوێ</string>
+    <string name="ChangePassBtn">گۆڕین</string>
+
+    <!-- dialg change plan -->
+    <string name="titleDialogChangePlan">رۆژانەکەت</string>
+    <string name="txtDialohChangePlan">تۆ رۆژانەکەت دەستکارى دەکەى یان دەسڕیتەوە ؟</string>
+    <string name="btnChangeDialogPlan">دەستکارى</string>
+    <string name="btnDeletePlan">سڕینەوە</string>
+
+    <!-- about page -->
+    <string name="aboutTxt">بەڕێوەبردنى کات یەکێکە لە گرنگترین خاڵەکانى بوون بە کەسێکى سەرکەوتوو , بێ گومان ئەبێ شتێک هەبێ کە هاوکارت بێت بۆ بەڕێوەبردنى کات</string>
+
+    <!-- setting page -->
+    <string name="itemChangeName">گۆرینى ناو</string>
+    <string name="itemChangePass">گۆڕینى وشەى نهێنى</string>
+    <string name="itemChangeLanguage">گۆڕینى زمان</string>
+    <string name="logout">چوونەدەر</string>
+
+    <!-- details page -->
+    <string name="myFell">هەستى من</string>
+    <string name="myHealth">تەندروستیم</string>
+    <string name="myDay">رۆژەکەم</string>
+    <string name="myImportand">گرنگترینى ئەمڕۆ :</string>
+
+    <!-- progress bar -->
+    <string name="txtProgress">چاوەڕێ بە ...</string>
+
+    <!-- Toast -->
+    <string name="empty">تکایە خانەکان پر بکەوە</string>
+    <string name="emptyEmailPass">زانیاریەکانت بنووسە</string>
+    <string name="pleaseVerifyAccount">تکایە هەژمارەکەت پشتڕاستبکەوە</string>
+    <string name="tryAgain">دووبارە هەوڵبدە</string>
+    <string name="sendMsgToRecover">نامە بۆ هەژمارى ئیمەیلەکەت نێردرا</string>
+    <string name="thisEmailNotHave">هەژمار بەم ناونیشانە نییە</string>
+    <string name="enterName">ناوت بنووسە</string>
+    <string name="enterAge">تەمەنت بنووسە</string>
+    <string name="enterEmailRegister">ناونیشانى ئەڵێکترۆنى بنووسە</string>
+    <string name="enterPassRegister">وشەى نهێنى بنووسە</string>
+    <string name="lessPass">وشەى نهێنى کەمتر لە ٨ پیت نابێت</string>
+    <string name="enterGenderRegister">رەگەزى خۆت دیارى بکە</string>
+    <string name="sendMsgVerifyEmail">نامەى پشتڕاست کردن بۆ ئیمەیلەکەت نێردرا</string>
+    <string name="thisEmailWrong">ناتوانى بەم ناونیشانە خۆت تۆمار بکەى</string>
+
+
+</resources>

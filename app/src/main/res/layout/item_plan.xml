@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="23/01/2022"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:textAlignment="textEnd"
+        android:id="@+id/txtDate"
+        android:layout_marginRight="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDate"
+        android:id="@+id/lin1"
+        android:gravity="end"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="دلخۆشم"
+            android:textSize="20sp"
+            android:id="@+id/txtSmile"
+            android:textColor="@color/mor"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_happy_mor"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/imgSmile"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tebinii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin1"
+        android:layout_marginRight="8dp"
+        android:maxLength="40"
+        android:text="hello , avro ek zh xoshtrin roja zhyana mn boo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/tebinii"
+        android:background="@color/black"/>
+
+</RelativeLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/head">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12/02/2022"
+            android:id="@+id/txtDate"
+            android:textAlignment="textEnd"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خۆشترین رۆژ"
+            android:textSize="28sp"
+            android:layout_below="@+id/txtDate"
+            android:textColor="@color/black"
+            android:id="@+id/subject"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rel1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33E3DB45"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/water"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/shape_radius"
+            android:padding="20dp"
+            android:src="@drawable/watermor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/water"
+            android:text="تەندروستیم باشە"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true">
+
+                <ProgressBar
+                    android:id="@+id/progress1"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:indeterminateOnly="false"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/progress_circular1" />
+
+                <TextView
+                    android:id="@+id/txtProgressNumHealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0%"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3344ED75">
+
+            <ImageView
+                android:id="@+id/todayImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/shape_radius"
+                android:padding="20dp"
+                android:src="@drawable/sun" />
+
+            <TextView
+                android:id="@+id/txtToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@id/todayImage"
+                android:text="رۆژەکەم باشە"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+
+                <ProgressBar
+                    android:id="@+id/progress2"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:indeterminateOnly="false"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/progress_circular2" />
+
+                <TextView
+                    android:id="@+id/txtProgressNumToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0%"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#3344B2ED"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/faceImg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/shape_radius"
+                android:padding="20dp"
+                android:src="@drawable/ic_happy_mor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@id/faceImg"
+                android:text="رۆژەکەم باشە"
+                android:id="@+id/faceTxt"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/thanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel1"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="سوپاسى :"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtThanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thanks"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/grng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtThanks"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="@string/myImportand"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtGrng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grng"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGrng"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="ئەرک :"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtArk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ark"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/rotin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtArk"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="رۆتین :"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtRotin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rotin"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRotin"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="تێبینى :"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtTebini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mor"
+        android:textSize="18sp" />
+
+</RelativeLayout>

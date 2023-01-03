@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.AddFragment"
+    android:background="@color/background"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/head">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12/02/2022"
+            android:id="@+id/txtDate"
+            android:textAlignment="textEnd"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDate"
+            android:text="خۆشترین رۆژ"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rel1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#33E3DB45"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/water"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/shape_radius"
+                android:padding="20dp"
+                android:src="@drawable/watermor" />
+
+            <TextView
+                android:id="@+id/txtWater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@id/water"
+                android:text="تەندروستیم باشە"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true">
+
+                <ProgressBar
+                    android:id="@+id/progress1"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:indeterminateOnly="false"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/progress_circular1" />
+
+                <TextView
+                    android:id="@+id/txtProgressNumHealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3344ED75">
+
+            <ImageView
+                android:id="@+id/todayImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/shape_radius"
+                android:padding="20dp"
+                android:src="@drawable/sun" />
+
+            <TextView
+                android:id="@+id/txtToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@id/todayImage"
+                android:text="رۆژەکەم باشە"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+
+                <ProgressBar
+                    android:id="@+id/progress2"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:indeterminateOnly="false"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/progress_circular2" />
+
+                <TextView
+                    android:id="@+id/txtProgressNumToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0%"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#3344B2ED"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/faceImg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/shape_radius"
+                android:padding="20dp"
+                android:src="@drawable/ic_happy_mor" />
+
+            <TextView
+                android:id="@+id/faceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@id/faceImg"
+                android:text="رۆژەکەم باشە"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/thanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel1"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="سوپاسى :"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtThanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thanks"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/grng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtThanks"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="@string/myImportand"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtGrng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grng"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGrng"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="ئەرک :"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtArk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ark"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/rotin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtArk"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="رۆتین :"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtRotin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rotin"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRotin"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="تێبینى :"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtTebini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mor"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    tools:context=".Fragment.AddFragment"-->
+<!--    android:background="@color/background">-->
+
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progress1"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:progress="20"-->
+<!--        android:indeterminateOnly="false"-->
+<!--        android:progressDrawable="@drawable/progress_circular1"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtProgress1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="24sp"-->
+<!--            android:text="0%"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtDate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/txtProgress1"-->
+<!--        android:layout_marginStart="14dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="14dp"-->
+<!--        android:text="23/01/2022"-->
+<!--        android:textAlignment="textEnd"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="34sp" />-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="14dp"-->
+<!--        android:layout_below="@+id/txtDate"-->
+<!--        android:layout_marginStart="14dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/fisrt"-->
+<!--        >-->
+
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/first"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/lin1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:gravity="end">-->
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/faceImg"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/ic_normal_black" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/faceTxt"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:text="کەیف خۆشم"-->
+<!--                    android:textColor="@color/mor"-->
+<!--                    android:textSize="16sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:text="@string/myFell"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="22sp" />-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/lin2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/lin1"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:gravity="end">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/numHealth"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="10/10"-->
+<!--                    android:textColor="@color/mor"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/health"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/lin1"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:gravity="start"-->
+<!--                    android:text="@string/myHealth"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="22sp" />-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linl11"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/lin2"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:gravity="end">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/numToday"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="10/10"-->
+<!--                    android:textColor="@color/mor"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/today1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:text="@string/myDay"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="22sp" />-->
+
+
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/thanks"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/linl11"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:gravity="start"-->
+<!--                android:text="سوپاسى :"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="22sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtThanks"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/thanks"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:gravity="top"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:textColor="@color/mor"-->
+<!--                android:textSize="18sp" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/grng"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/txtThanks"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:gravity="start"-->
+<!--                android:text="@string/myImportand"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="22sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtGrng"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/grng"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:gravity="top"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:textColor="@color/mor"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/ark"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/txtGrng"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:gravity="start"-->
+<!--                android:text="ئەرک :"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="22sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtArk"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/ark"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:gravity="top"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:textColor="@color/mor"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/rotin"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/txtArk"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:gravity="start"-->
+<!--                android:text="رۆتین :"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="22sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtRotin"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/rotin"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:gravity="top"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:textColor="@color/mor"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tb"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/txtRotin"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:gravity="start"-->
+<!--                android:text="تێبینى :"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="22sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtTebini"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/tb"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:gravity="top"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:textColor="@color/mor"-->
+<!--                android:textSize="18sp" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </RelativeLayout>-->
+
+
+<!--</RelativeLayout>-->

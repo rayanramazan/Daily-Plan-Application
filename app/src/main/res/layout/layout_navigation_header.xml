@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageNavigationUser"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:id="@+id/viewSupporter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageNavigationUser"
+        app:layout_constraintEnd_toEndOf="@id/imageNavigationUser"
+        app:layout_constraintStart_toStartOf="@+id/imageNavigationUser"
+        app:layout_constraintTop_toTopOf="@id/imageNavigationUser"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/NameHeaderUser"
+        android:layout_marginStart="10dp"
+        android:text="Rayan Ramazan"
+        android:fontFamily="@font/myfont"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/viewSupporter"
+        app:layout_constraintStart_toEndOf="@id/imageNavigationUser"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imageNavigationUser"
+        android:text="پشتڕاستکریە"
+        android:fontFamily="@font/myfont"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/success"
+        app:layout_constraintTop_toBottomOf="@id/NameHeaderUser"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
